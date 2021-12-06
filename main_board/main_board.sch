@@ -31,9 +31,9 @@ F 3 "~" H 11200 4500 50  0001 C CNN
 $EndComp
 Text GLabel 11700 4650 2    50   Input ~ 0
 tempMeasure0
-Text GLabel 9200 4400 2    50   Input ~ 0
+Text GLabel 9200 4600 2    50   Input ~ 0
 stepperON
-Text GLabel 9200 4500 2    50   Input ~ 0
+Text GLabel 9200 4700 2    50   Input ~ 0
 stepperErr
 Text GLabel 11150 1150 0    50   Input ~ 0
 SCL
@@ -2368,7 +2368,7 @@ F 3 "" H 15650 7150 50  0001 C CNN
 $EndComp
 Text GLabel 15300 7150 3    50   Input ~ 0
 reflectivesensor0
-Text GLabel 9200 4600 2    50   Input ~ 0
+Text GLabel 9200 4800 2    50   Input ~ 0
 LEDcon0
 Text GLabel 15250 6750 2    50   Input ~ 0
 LEDcon0
@@ -3040,7 +3040,7 @@ Wire Wire Line
 Wire Wire Line
 	5750 2900 5800 2900
 Text GLabel 5350 2900 0    50   Input ~ 0
-5VDC_output0
+5VDC_output1
 Connection ~ 5450 2900
 Wire Wire Line
 	5450 2900 5350 2900
@@ -3134,7 +3134,7 @@ Wire Wire Line
 Wire Wire Line
 	5750 4400 5800 4400
 Text GLabel 5350 4400 0    50   Input ~ 0
-5VDC_output0
+5VDC_output2
 Connection ~ 5450 4400
 Wire Wire Line
 	5450 4400 5350 4400
@@ -3228,7 +3228,7 @@ Wire Wire Line
 Wire Wire Line
 	5750 5900 5800 5900
 Text GLabel 5350 5900 0    50   Input ~ 0
-5VDC_output0
+5VDC_output3
 Connection ~ 5450 5900
 Wire Wire Line
 	5450 5900 5350 5900
@@ -3322,7 +3322,7 @@ Wire Wire Line
 Wire Wire Line
 	5750 7400 5800 7400
 Text GLabel 5350 7400 0    50   Input ~ 0
-5VDC_output0
+5VDC_output4
 Connection ~ 5450 7400
 Wire Wire Line
 	5450 7400 5350 7400
@@ -3416,7 +3416,7 @@ Wire Wire Line
 Wire Wire Line
 	5750 8900 5800 8900
 Text GLabel 5350 8900 0    50   Input ~ 0
-5VDC_output0
+5VDC_output5
 Connection ~ 5450 8900
 Wire Wire Line
 	5450 8900 5350 8900
@@ -3607,10 +3607,6 @@ Wire Wire Line
 Wire Wire Line
 	9150 4600 9200 4600
 Wire Wire Line
-	9150 4500 9200 4500
-Wire Wire Line
-	9150 4400 9200 4400
-Wire Wire Line
 	9150 4300 9200 4300
 Wire Wire Line
 	9150 4200 9200 4200
@@ -3714,4 +3710,16 @@ F 3 "" H 7650 850 50  0001 C CNN
 	1    7650 850 
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	9200 4700 9150 4700
+Wire Wire Line
+	9150 4800 9200 4800
+Text GLabel 9200 4400 2    50   Input ~ 0
+5VDC_output4
+Text GLabel 9200 4500 2    50   Input ~ 0
+5VDC_output5
+Wire Wire Line
+	9200 4400 9150 4400
+Wire Wire Line
+	9150 4500 9200 4500
 $EndSCHEMATC
