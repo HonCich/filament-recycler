@@ -17,7 +17,6 @@ Text GLabel 9200 3500 2    50   Input ~ 0
 24VDC_output1
 Text GLabel 9200 3400 2    50   Input ~ 0
 24VDC_output0
-NoConn ~ 1650 50  
 $Comp
 L Device:R R27
 U 1 1 60223BF4
@@ -493,33 +492,11 @@ F 3 "" H 15200 2550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	15000 2550 15200 2550
-$Comp
-L Device:Rotary_Encoder_Switch SW1
-U 1 1 61EAADC5
-P 13400 4800
-F 0 "SW1" H 13400 5167 50  0000 C CNN
-F 1 "Rotary_Encoder_Switch" H 13400 5076 50  0000 C CNN
-F 2 "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm" H 13250 4960 50  0001 C CNN
-F 3 "~" H 13400 5060 50  0001 C CNN
-	1    13400 4800
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR073
-U 1 1 61EABB57
-P 14000 4800
-F 0 "#PWR073" H 14000 4550 50  0001 C CNN
-F 1 "GND" V 14005 4672 50  0000 R CNN
-F 2 "" H 14000 4800 50  0001 C CNN
-F 3 "" H 14000 4800 50  0001 C CNN
-	1    14000 4800
-	0    -1   -1   0   
-$EndComp
-Text GLabel 13800 5100 3    50   Input ~ 0
+Text GLabel 13450 4400 1    50   Input ~ 0
 enca
-Text GLabel 13800 4500 1    50   Input ~ 0
+Text GLabel 13450 4600 3    50   Input ~ 0
 encb
-Text GLabel 12950 4650 1    50   Input ~ 0
+Text GLabel 13000 5000 3    50   Input ~ 0
 button
 Text GLabel 9200 3900 2    50   Input ~ 0
 24VDC_output5
@@ -1388,44 +1365,7 @@ Text GLabel 9300 2150 2    50   Input ~ 0
 DIR0
 Text GLabel 9300 1750 2    50   Input ~ 0
 STEP0
-Wire Wire Line
-	13400 7850 13100 7850
-Wire Wire Line
-	13850 7850 13750 7850
-$Comp
-L Device:C C10
-U 1 1 6283E2CF
-P 13750 8000
-F 0 "C10" H 13865 8046 50  0000 L CNN
-F 1 "100uF" H 13865 7955 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 13788 7850 50  0001 C CNN
-F 3 "~" H 13750 8000 50  0001 C CNN
-	1    13750 8000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR068
-U 1 1 6283E2C9
-P 13750 8150
-F 0 "#PWR068" H 13750 7900 50  0001 C CNN
-F 1 "GND" H 13755 7977 50  0000 C CNN
-F 2 "" H 13750 8150 50  0001 C CNN
-F 3 "" H 13750 8150 50  0001 C CNN
-	1    13750 8150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R34
-U 1 1 6283E2C3
-P 13550 7850
-F 0 "R34" V 13343 7850 50  0000 C CNN
-F 1 "10k" V 13434 7850 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 13480 7850 50  0001 C CNN
-F 3 "~" H 13550 7850 50  0001 C CNN
-	1    13550 7850
-	0    1    1    0   
-$EndComp
-Text GLabel 13850 7850 2    50   Input ~ 0
+Text GLabel 13150 7850 2    50   Input ~ 0
 AO
 $Comp
 L power:GND #PWR060
@@ -2106,65 +2046,38 @@ F 3 "http://www.nxp.com/documents/data_sheet/PCA9685.pdf" H 8050 4800 50  0001 C
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR058
-U 1 1 61A76F30
-P 12950 4950
-F 0 "#PWR058" H 12950 4800 50  0001 C CNN
-F 1 "+3.3V" V 12965 5078 50  0000 L CNN
-F 2 "" H 12950 4950 50  0001 C CNN
-F 3 "" H 12950 4950 50  0001 C CNN
-	1    12950 4950
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:C C8
 U 1 1 61B1A5D9
-P 12850 4800
-F 0 "C8" H 12735 4754 50  0000 R CNN
-F 1 "100n" H 12735 4845 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 12888 4650 50  0001 C CNN
-F 3 "~" H 12850 4800 50  0001 C CNN
-	1    12850 4800
+P 13100 4850
+F 0 "C8" H 12985 4804 50  0000 R CNN
+F 1 "100n" H 12985 4895 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 13138 4700 50  0001 C CNN
+F 3 "~" H 13100 4850 50  0001 C CNN
+	1    13100 4850
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	12850 4950 12950 4950
-Wire Wire Line
-	12950 4950 13100 4950
-Wire Wire Line
-	13100 4950 13100 4900
-Connection ~ 12950 4950
 $Comp
 L Device:C C13
 U 1 1 61BB01E8
-P 14000 4950
-F 0 "C13" H 13885 4904 50  0000 R CNN
-F 1 "100n" H 13885 4995 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 14038 4800 50  0001 C CNN
-F 3 "~" H 14000 4950 50  0001 C CNN
-	1    14000 4950
+P 13650 4650
+F 0 "C13" H 13535 4604 50  0000 R CNN
+F 1 "100n" H 13535 4695 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 13688 4500 50  0001 C CNN
+F 3 "~" H 13650 4650 50  0001 C CNN
+	1    13650 4650
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:C C12
 U 1 1 61BC5069
-P 14000 4650
-F 0 "C12" H 13885 4604 50  0000 R CNN
-F 1 "100n" H 13885 4695 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 14038 4500 50  0001 C CNN
-F 3 "~" H 14000 4650 50  0001 C CNN
-	1    14000 4650
+P 13650 4350
+F 0 "C12" H 13535 4304 50  0000 R CNN
+F 1 "100n" H 13535 4395 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 13688 4200 50  0001 C CNN
+F 3 "~" H 13650 4350 50  0001 C CNN
+	1    13650 4350
 	-1   0    0    1   
 $EndComp
-Connection ~ 14000 4800
-Wire Wire Line
-	14000 5100 13700 5100
-Wire Wire Line
-	13700 5100 13700 4900
-Wire Wire Line
-	13700 4700 13700 4500
-Wire Wire Line
-	13700 4500 14000 4500
 $Comp
 L Diode:1N4007 D13
 U 1 1 61C46983
@@ -2635,42 +2548,10 @@ F 3 "" H 13300 7050 50  0001 C CNN
 	1    13300 7050
 	0    1    1    0   
 $EndComp
-Text GLabel 13900 6850 2    50   Input ~ 0
-DT
-Text GLabel 13300 6950 2    50   Input ~ 0
-SCK
 Wire Wire Line
 	13100 6750 13300 6750
 Wire Wire Line
-	13300 6950 13100 6950
-Wire Wire Line
 	13100 7050 13300 7050
-$Comp
-L power:GND #PWR069
-U 1 1 628CF8CD
-P 13850 7150
-F 0 "#PWR069" H 13850 6900 50  0001 C CNN
-F 1 "GND" H 13855 6977 50  0000 C CNN
-F 2 "" H 13850 7150 50  0001 C CNN
-F 3 "" H 13850 7150 50  0001 C CNN
-	1    13850 7150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C11
-U 1 1 628CF8D3
-P 13850 7000
-F 0 "C11" H 13965 7046 50  0000 L CNN
-F 1 "100uF" H 13965 6955 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 13888 6850 50  0001 C CNN
-F 3 "~" H 13850 7000 50  0001 C CNN
-	1    13850 7000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	13900 6850 13850 6850
-Wire Wire Line
-	13500 6850 13100 6850
 $Comp
 L power:+24V #PWR072
 U 1 1 62A230CD
@@ -2682,8 +2563,6 @@ F 3 "" H 14000 1300 50  0001 C CNN
 	1    14000 1300
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	14000 4800 13700 4800
 Wire Wire Line
 	14900 6750 14650 6750
 Wire Wire Line
@@ -2756,24 +2635,9 @@ $EndComp
 Wire Wire Line
 	11250 5400 11200 5400
 Wire Wire Line
-	12850 4650 13100 4650
-Wire Wire Line
-	13100 4650 13100 4700
-Wire Wire Line
 	7500 4400 7500 4300
 Connection ~ 7500 4400
 Connection ~ 7500 4300
-$Comp
-L Device:R R35
-U 1 1 62E169D6
-P 13650 6850
-F 0 "R35" V 13443 6850 50  0000 C CNN
-F 1 "10k" V 13534 6850 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 13580 6850 50  0001 C CNN
-F 3 "~" H 13650 6850 50  0001 C CNN
-	1    13650 6850
-	0    1    1    0   
-$EndComp
 $Comp
 L Device:R R33
 U 1 1 62E2E02C
@@ -3648,17 +3512,11 @@ Wire Wire Line
 Connection ~ 15300 5800
 Wire Wire Line
 	15300 5800 15250 5800
-Connection ~ 13850 6850
-Wire Wire Line
-	13850 6850 13800 6850
 Wire Wire Line
 	15300 6850 15250 6850
 Connection ~ 15250 6850
 Wire Wire Line
 	15250 7150 15350 7150
-Connection ~ 13750 7850
-Wire Wire Line
-	13750 7850 13700 7850
 Wire Wire Line
 	13150 7550 13100 7550
 Wire Wire Line
@@ -3722,4 +3580,71 @@ Wire Wire Line
 	9200 4400 9150 4400
 Wire Wire Line
 	9150 4500 9200 4500
+Text GLabel 13300 6850 2    50   Input ~ 0
+DT
+Text GLabel 13300 6950 2    50   Input ~ 0
+SCK
+Wire Wire Line
+	13300 6850 13100 6850
+Wire Wire Line
+	13300 6950 13100 6950
+Wire Wire Line
+	13150 7850 13100 7850
+$Comp
+L Connector:Conn_01x05_Male J42
+U 1 1 61FA40BF
+P 12750 4600
+F 0 "J42" H 12858 4981 50  0000 C CNN
+F 1 "Conn_01x05_Male" H 12858 4890 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 12750 4600 50  0001 C CNN
+F 3 "~" H 12750 4600 50  0001 C CNN
+	1    12750 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR068
+U 1 1 61FA6407
+P 13650 4500
+F 0 "#PWR068" H 13650 4250 50  0001 C CNN
+F 1 "GND" V 13655 4372 50  0000 R CNN
+F 2 "" H 13650 4500 50  0001 C CNN
+F 3 "" H 13650 4500 50  0001 C CNN
+	1    13650 4500
+	0    -1   -1   0   
+$EndComp
+Connection ~ 13650 4500
+Wire Wire Line
+	13650 4500 12950 4500
+Wire Wire Line
+	13550 4800 13550 4600
+Wire Wire Line
+	13550 4600 12950 4600
+Wire Wire Line
+	13550 4200 13550 4400
+Wire Wire Line
+	13550 4400 12950 4400
+$Comp
+L power:+3.3V #PWR058
+U 1 1 6243C181
+P 13250 4700
+F 0 "#PWR058" H 13250 4550 50  0001 C CNN
+F 1 "+3.3V" V 13265 4828 50  0000 L CNN
+F 2 "" H 13250 4700 50  0001 C CNN
+F 3 "" H 13250 4700 50  0001 C CNN
+	1    13250 4700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13250 4700 13100 4700
+Connection ~ 13100 4700
+Wire Wire Line
+	13100 4700 12950 4700
+Wire Wire Line
+	13100 5000 12950 5000
+Wire Wire Line
+	12950 5000 12950 4800
+Wire Wire Line
+	13550 4800 13650 4800
+Wire Wire Line
+	13550 4200 13650 4200
 $EndSCHEMATC
