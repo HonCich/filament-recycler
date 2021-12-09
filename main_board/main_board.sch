@@ -13,9 +13,9 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 9200 3500 2    50   Input ~ 0
+Text GLabel 9200 3700 2    50   Input ~ 0
 24VDC_output1
-Text GLabel 9200 3400 2    50   Input ~ 0
+Text GLabel 9200 3600 2    50   Input ~ 0
 24VDC_output0
 $Comp
 L Device:R R27
@@ -73,7 +73,7 @@ Wire Wire Line
 Connection ~ 11650 1000
 Wire Wire Line
 	11650 1000 11650 900 
-Text GLabel 9200 3600 2    50   Input ~ 0
+Text GLabel 9200 3800 2    50   Input ~ 0
 24VDC_output2
 $Comp
 L power:GND #PWR043
@@ -92,7 +92,7 @@ U 1 1 61A9A339
 P 13100 700
 F 0 "J26" V 13064 512 50  0000 R CNN
 F 1 "24VDC_in" V 12973 512 50  0000 R CNN
-F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal" H 13100 700 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 13100 700 50  0001 C CNN
 F 3 "~" H 13100 700 50  0001 C CNN
 	1    13100 700 
 	0    -1   -1   0   
@@ -130,9 +130,9 @@ F 3 "~" H 13000 1150 50  0001 C CNN
 	1    13000 1150
 	1    0    0    -1  
 $EndComp
-Text GLabel 9200 3700 2    50   Input ~ 0
+Text GLabel 9200 3900 2    50   Input ~ 0
 24VDC_output3
-Text GLabel 9200 3800 2    50   Input ~ 0
+Text GLabel 9200 4000 2    50   Input ~ 0
 24VDC_output4
 $Comp
 L Connector:Conn_01x04_Female J19
@@ -498,7 +498,7 @@ Text GLabel 13450 4600 3    50   Input ~ 0
 encb
 Text GLabel 13000 5000 3    50   Input ~ 0
 button
-Text GLabel 9200 3900 2    50   Input ~ 0
+Text GLabel 9200 4100 2    50   Input ~ 0
 24VDC_output5
 $Comp
 L power:+5V #PWR049
@@ -1410,7 +1410,7 @@ U 1 1 625263DD
 P 4350 8500
 F 0 "J10" H 4430 8492 50  0000 L CNN
 F 1 "24VDC output 5" H 4430 8401 50  0000 L CNN
-F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal" H 4350 8500 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4350 8500 50  0001 C CNN
 F 3 "~" H 4350 8500 50  0001 C CNN
 	1    4350 8500
 	1    0    0    -1  
@@ -1432,7 +1432,7 @@ U 1 1 625263E9
 P 3850 8550
 F 0 "D6" V 3804 8630 50  0000 L CNN
 F 1 "1N4007" V 3895 8630 50  0000 L CNN
-F 2 "Diode_SMD:D_SMA_Handsoldering" H 3850 8375 50  0001 C CNN
+F 2 "Diode_THT:D_DO-15_P2.54mm_Vertical_AnodeUp" H 3850 8375 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 3850 8550 50  0001 C CNN
 	1    3850 8550
 	0    1    1    0   
@@ -1583,7 +1583,7 @@ U 1 1 61CE89CE
 P 3850 7050
 F 0 "D5" V 3804 7130 50  0000 L CNN
 F 1 "1N4007" V 3895 7130 50  0000 L CNN
-F 2 "Diode_SMD:D_SMA_Handsoldering" H 3850 6875 50  0001 C CNN
+F 2 "Diode_THT:D_DO-15_P2.54mm_Vertical_AnodeUp" H 3850 6875 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 3850 7050 50  0001 C CNN
 	1    3850 7050
 	0    1    1    0   
@@ -1605,7 +1605,7 @@ U 1 1 61CE89C2
 P 4350 7000
 F 0 "J9" H 4430 6992 50  0000 L CNN
 F 1 "24VDC output 4" H 4430 6901 50  0000 L CNN
-F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal" H 4350 7000 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4350 7000 50  0001 C CNN
 F 3 "~" H 4350 7000 50  0001 C CNN
 	1    4350 7000
 	1    0    0    -1  
@@ -1693,7 +1693,7 @@ U 1 1 61CDCBDB
 P 3850 5550
 F 0 "D4" V 3804 5630 50  0000 L CNN
 F 1 "1N4007" V 3895 5630 50  0000 L CNN
-F 2 "Diode_SMD:D_SMA_Handsoldering" H 3850 5375 50  0001 C CNN
+F 2 "Diode_THT:D_DO-15_P2.54mm_Vertical_AnodeUp" H 3850 5375 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 3850 5550 50  0001 C CNN
 	1    3850 5550
 	0    1    1    0   
@@ -1715,7 +1715,7 @@ U 1 1 61CDCBCF
 P 4350 5500
 F 0 "J8" H 4430 5492 50  0000 L CNN
 F 1 "24VDC output 3" H 4430 5401 50  0000 L CNN
-F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal" H 4350 5500 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4350 5500 50  0001 C CNN
 F 3 "~" H 4350 5500 50  0001 C CNN
 	1    4350 5500
 	1    0    0    -1  
@@ -1822,7 +1822,7 @@ U 1 1 61A107FC
 P 3850 4050
 F 0 "D3" V 3804 4130 50  0000 L CNN
 F 1 "1N4007" V 3895 4130 50  0000 L CNN
-F 2 "Diode_SMD:D_SMA_Handsoldering" H 3850 3875 50  0001 C CNN
+F 2 "Diode_THT:D_DO-15_P2.54mm_Vertical_AnodeUp" H 3850 3875 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 3850 4050 50  0001 C CNN
 	1    3850 4050
 	0    1    1    0   
@@ -1844,7 +1844,7 @@ U 1 1 61A107F0
 P 4350 4000
 F 0 "J7" H 4430 3992 50  0000 L CNN
 F 1 "24VDC output 2" H 4430 3901 50  0000 L CNN
-F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal" H 4350 4000 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4350 4000 50  0001 C CNN
 F 3 "~" H 4350 4000 50  0001 C CNN
 	1    4350 4000
 	1    0    0    -1  
@@ -1916,7 +1916,7 @@ U 1 1 61A06515
 P 3850 2550
 F 0 "D2" V 3804 2630 50  0000 L CNN
 F 1 "1N4007" V 3895 2630 50  0000 L CNN
-F 2 "Diode_SMD:D_SMA_Handsoldering" H 3850 2375 50  0001 C CNN
+F 2 "Diode_THT:D_DO-15_P2.54mm_Vertical_AnodeUp" H 3850 2375 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 3850 2550 50  0001 C CNN
 	1    3850 2550
 	0    1    1    0   
@@ -1938,7 +1938,7 @@ U 1 1 61A06509
 P 4350 2500
 F 0 "J6" H 4430 2492 50  0000 L CNN
 F 1 "24VDC output 1" H 4430 2401 50  0000 L CNN
-F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal" H 4350 2500 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4350 2500 50  0001 C CNN
 F 3 "~" H 4350 2500 50  0001 C CNN
 	1    4350 2500
 	1    0    0    -1  
@@ -2007,7 +2007,7 @@ U 1 1 60316A55
 P 3850 1050
 F 0 "D1" V 3804 1130 50  0000 L CNN
 F 1 "1N4007" V 3895 1130 50  0000 L CNN
-F 2 "Diode_SMD:D_SMA_Handsoldering" H 3850 875 50  0001 C CNN
+F 2 "Diode_THT:D_DO-15_P2.54mm_Vertical_AnodeUp" H 3850 875 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 3850 1050 50  0001 C CNN
 	1    3850 1050
 	0    1    1    0   
@@ -2029,7 +2029,7 @@ U 1 1 6030DF77
 P 4350 1000
 F 0 "J5" H 4430 992 50  0000 L CNN
 F 1 "24VDC output 0" H 4430 901 50  0000 L CNN
-F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal" H 4350 1000 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4350 1000 50  0001 C CNN
 F 3 "~" H 4350 1000 50  0001 C CNN
 	1    4350 1000
 	1    0    0    -1  
@@ -2084,7 +2084,7 @@ U 1 1 61C46983
 P 13150 1300
 F 0 "D13" V 13104 1380 50  0000 L CNN
 F 1 "1N4007" V 13195 1380 50  0000 L CNN
-F 2 "Diode_SMD:D_SMA_Handsoldering" H 13150 1125 50  0001 C CNN
+F 2 "Diode_THT:D_DO-15_P2.54mm_Vertical_AnodeUp" H 13150 1125 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 13150 1300 50  0001 C CNN
 	1    13150 1300
 	1    0    0    -1  
@@ -2149,7 +2149,7 @@ U 1 1 61DD9BC8
 P 14850 850
 F 0 "D14" V 14804 930 50  0000 L CNN
 F 1 "1N4007" V 14895 930 50  0000 L CNN
-F 2 "Diode_SMD:D_SMA_Handsoldering" H 14850 675 50  0001 C CNN
+F 2 "Diode_THT:D_DO-15_P2.54mm_Vertical_AnodeUp" H 14850 675 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 14850 850 50  0001 C CNN
 	1    14850 850 
 	0    1    1    0   
@@ -2285,13 +2285,13 @@ Text GLabel 9200 4800 2    50   Input ~ 0
 LEDcon0
 Text GLabel 15250 6750 2    50   Input ~ 0
 LEDcon0
-Text GLabel 9200 4000 2    50   Input ~ 0
-5VDC_output0
-Text GLabel 9200 4100 2    50   Input ~ 0
-5VDC_output1
 Text GLabel 9200 4200 2    50   Input ~ 0
-5VDC_output2
+5VDC_output0
 Text GLabel 9200 4300 2    50   Input ~ 0
+5VDC_output1
+Text GLabel 9200 4400 2    50   Input ~ 0
+5VDC_output2
+Text GLabel 9200 4500 2    50   Input ~ 0
 5VDC_output3
 $Comp
 L Connector:Conn_01x02_Female J31
@@ -2688,7 +2688,7 @@ U 1 1 62ED41FB
 P 10650 4750
 F 0 "J17" H 10730 4742 50  0000 L CNN
 F 1 "temperature measure 0" H 10730 4651 50  0000 L CNN
-F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal" H 10650 4750 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 10650 4750 50  0001 C CNN
 F 3 "~" H 10650 4750 50  0001 C CNN
 	1    10650 4750
 	-1   0    0    1   
@@ -2699,7 +2699,7 @@ U 1 1 62F309E1
 P 10650 5500
 F 0 "J18" H 10730 5492 50  0000 L CNN
 F 1 "temperature measure 1" H 10730 5401 50  0000 L CNN
-F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal" H 10650 5500 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 10650 5500 50  0001 C CNN
 F 3 "~" H 10650 5500 50  0001 C CNN
 	1    10650 5500
 	-1   0    0    1   
@@ -2859,7 +2859,7 @@ U 1 1 631222C9
 P 5800 1050
 F 0 "D7" V 5754 1130 50  0000 L CNN
 F 1 "1N4007" V 5845 1130 50  0000 L CNN
-F 2 "Diode_SMD:D_SMA_Handsoldering" H 5800 875 50  0001 C CNN
+F 2 "Diode_THT:D_DO-15_P2.54mm_Vertical_AnodeUp" H 5800 875 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5800 1050 50  0001 C CNN
 	1    5800 1050
 	0    1    1    0   
@@ -2870,7 +2870,7 @@ U 1 1 631222D5
 P 6300 1000
 F 0 "J11" H 6380 992 50  0000 L CNN
 F 1 "5VDC output 0" H 6380 901 50  0000 L CNN
-F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal" H 6300 1000 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6300 1000 50  0001 C CNN
 F 3 "~" H 6300 1000 50  0001 C CNN
 	1    6300 1000
 	1    0    0    -1  
@@ -2953,7 +2953,7 @@ U 1 1 6318D23C
 P 5800 2550
 F 0 "D8" V 5754 2630 50  0000 L CNN
 F 1 "1N4007" V 5845 2630 50  0000 L CNN
-F 2 "Diode_SMD:D_SMA_Handsoldering" H 5800 2375 50  0001 C CNN
+F 2 "Diode_THT:D_DO-15_P2.54mm_Vertical_AnodeUp" H 5800 2375 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5800 2550 50  0001 C CNN
 	1    5800 2550
 	0    1    1    0   
@@ -2964,7 +2964,7 @@ U 1 1 6318D242
 P 6300 2500
 F 0 "J12" H 6380 2492 50  0000 L CNN
 F 1 "5VDC output 1" H 6380 2401 50  0000 L CNN
-F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal" H 6300 2500 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6300 2500 50  0001 C CNN
 F 3 "~" H 6300 2500 50  0001 C CNN
 	1    6300 2500
 	1    0    0    -1  
@@ -3047,7 +3047,7 @@ U 1 1 631B17C4
 P 5800 4050
 F 0 "D9" V 5754 4130 50  0000 L CNN
 F 1 "1N4007" V 5845 4130 50  0000 L CNN
-F 2 "Diode_SMD:D_SMA_Handsoldering" H 5800 3875 50  0001 C CNN
+F 2 "Diode_THT:D_DO-15_P2.54mm_Vertical_AnodeUp" H 5800 3875 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5800 4050 50  0001 C CNN
 	1    5800 4050
 	0    1    1    0   
@@ -3058,7 +3058,7 @@ U 1 1 631B17CA
 P 6300 4000
 F 0 "J13" H 6380 3992 50  0000 L CNN
 F 1 "5VDC output 2" H 6380 3901 50  0000 L CNN
-F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal" H 6300 4000 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6300 4000 50  0001 C CNN
 F 3 "~" H 6300 4000 50  0001 C CNN
 	1    6300 4000
 	1    0    0    -1  
@@ -3141,7 +3141,7 @@ U 1 1 631B17FE
 P 5800 5550
 F 0 "D10" V 5754 5630 50  0000 L CNN
 F 1 "1N4007" V 5845 5630 50  0000 L CNN
-F 2 "Diode_SMD:D_SMA_Handsoldering" H 5800 5375 50  0001 C CNN
+F 2 "Diode_THT:D_DO-15_P2.54mm_Vertical_AnodeUp" H 5800 5375 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5800 5550 50  0001 C CNN
 	1    5800 5550
 	0    1    1    0   
@@ -3152,7 +3152,7 @@ U 1 1 631B1804
 P 6300 5500
 F 0 "J14" H 6380 5492 50  0000 L CNN
 F 1 "5VDC output 3" H 6380 5401 50  0000 L CNN
-F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal" H 6300 5500 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6300 5500 50  0001 C CNN
 F 3 "~" H 6300 5500 50  0001 C CNN
 	1    6300 5500
 	1    0    0    -1  
@@ -3235,7 +3235,7 @@ U 1 1 6324F92C
 P 5800 7050
 F 0 "D11" V 5754 7130 50  0000 L CNN
 F 1 "1N4007" V 5845 7130 50  0000 L CNN
-F 2 "Diode_SMD:D_SMA_Handsoldering" H 5800 6875 50  0001 C CNN
+F 2 "Diode_THT:D_DO-15_P2.54mm_Vertical_AnodeUp" H 5800 6875 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5800 7050 50  0001 C CNN
 	1    5800 7050
 	0    1    1    0   
@@ -3246,7 +3246,7 @@ U 1 1 6324F932
 P 6300 7000
 F 0 "J15" H 6380 6992 50  0000 L CNN
 F 1 "5VDC output 4" H 6380 6901 50  0000 L CNN
-F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal" H 6300 7000 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6300 7000 50  0001 C CNN
 F 3 "~" H 6300 7000 50  0001 C CNN
 	1    6300 7000
 	1    0    0    -1  
@@ -3329,7 +3329,7 @@ U 1 1 6324F966
 P 5800 8550
 F 0 "D12" V 5754 8630 50  0000 L CNN
 F 1 "1N4007" V 5845 8630 50  0000 L CNN
-F 2 "Diode_SMD:D_SMA_Handsoldering" H 5800 8375 50  0001 C CNN
+F 2 "Diode_THT:D_DO-15_P2.54mm_Vertical_AnodeUp" H 5800 8375 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5800 8550 50  0001 C CNN
 	1    5800 8550
 	0    1    1    0   
@@ -3340,7 +3340,7 @@ U 1 1 6324F96C
 P 6300 8500
 F 0 "J16" H 6380 8492 50  0000 L CNN
 F 1 "5VDC output 5" H 6380 8401 50  0000 L CNN
-F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal" H 6300 8500 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6300 8500 50  0001 C CNN
 F 3 "~" H 6300 8500 50  0001 C CNN
 	1    6300 8500
 	1    0    0    -1  
@@ -3572,9 +3572,9 @@ Wire Wire Line
 	9200 4700 9150 4700
 Wire Wire Line
 	9150 4800 9200 4800
-Text GLabel 9200 4400 2    50   Input ~ 0
+Text GLabel 9200 3400 2    50   Input ~ 0
 5VDC_output4
-Text GLabel 9200 4500 2    50   Input ~ 0
+Text GLabel 9200 3500 2    50   Input ~ 0
 5VDC_output5
 Wire Wire Line
 	9200 4400 9150 4400
@@ -3647,4 +3647,48 @@ Wire Wire Line
 	13550 4800 13650 4800
 Wire Wire Line
 	13550 4200 13650 4200
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 6280F4A1
+P 950 7750
+F 0 "H1" H 1050 7796 50  0000 L CNN
+F 1 "MountingHole" H 1050 7705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 950 7750 50  0001 C CNN
+F 3 "~" H 950 7750 50  0001 C CNN
+	1    950  7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 6280F916
+P 950 7950
+F 0 "H2" H 1050 7996 50  0000 L CNN
+F 1 "MountingHole" H 1050 7905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 950 7950 50  0001 C CNN
+F 3 "~" H 950 7950 50  0001 C CNN
+	1    950  7950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 6283D1E1
+P 950 8150
+F 0 "H3" H 1050 8196 50  0000 L CNN
+F 1 "MountingHole" H 1050 8105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 950 8150 50  0001 C CNN
+F 3 "~" H 950 8150 50  0001 C CNN
+	1    950  8150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 6286AB13
+P 950 8350
+F 0 "H4" H 1050 8396 50  0000 L CNN
+F 1 "MountingHole" H 1050 8305 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 950 8350 50  0001 C CNN
+F 3 "~" H 950 8350 50  0001 C CNN
+	1    950  8350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
