@@ -1148,7 +1148,7 @@ $EndComp
 Text GLabel 7600 1850 0    50   Input ~ 0
 STEP3
 Text GLabel 7600 1250 0    50   Input ~ 0
-reflectivesensor0
+reflectiveSensor0
 Text GLabel 7550 1750 0    50   Input ~ 0
 SCK
 Text GLabel 9350 1550 2    50   Input ~ 0
@@ -1178,31 +1178,9 @@ F 3 "" H 7600 2150 50  0001 C CNN
 	1    7600 2150
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:R R25
-U 1 1 6025E97A
-P 7200 1450
-F 0 "R25" V 6993 1450 50  0000 C CNN
-F 1 "330R" V 7084 1450 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 7130 1450 50  0001 C CNN
-F 3 "~" H 7200 1450 50  0001 C CNN
-	1    7200 1450
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R26
-U 1 1 6025F50D
-P 6650 1550
-F 0 "R26" V 6443 1550 50  0000 C CNN
-F 1 "330R" V 6534 1550 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 6580 1550 50  0001 C CNN
-F 3 "~" H 6650 1550 50  0001 C CNN
-	1    6650 1550
-	0    1    1    0   
-$EndComp
-Text GLabel 7050 1450 0    50   Input ~ 0
+Text GLabel 7600 1450 0    50   Input ~ 0
 temp0
-Text GLabel 6500 1550 0    50   Input ~ 0
+Text GLabel 7600 1550 0    50   Input ~ 0
 temp1
 $Comp
 L main_board-rescue:ESP32-DEVKITC-32D-ESP32-DEVKITC-32D U1
@@ -1223,7 +1201,7 @@ Text GLabel 9300 1050 2    50   Input ~ 0
 SCL
 Text GLabel 9300 1950 2    50   Input ~ 0
 enca
-Text GLabel 7050 2050 0    50   Input ~ 0
+Text GLabel 9300 2150 2    50   Input ~ 0
 DIR1
 Text GLabel 9300 1850 2    50   Input ~ 0
 STEP1
@@ -1235,7 +1213,7 @@ Text GLabel 9300 950  2    50   Input ~ 0
 STEP2
 Text GLabel 9300 1750 2    50   Input ~ 0
 DIR0
-Text GLabel 9300 2150 2    50   Input ~ 0
+Text GLabel 7050 2050 0    50   Input ~ 0
 STEP0
 $Comp
 L Connector:Screw_Terminal_01x02 J10
@@ -1980,7 +1958,7 @@ L Device:LED D15
 U 1 1 6204FDF1
 P 15350 800
 F 0 "D15" V 15389 682 50  0000 R CNN
-F 1 "LED" V 15298 682 50  0000 R CNN
+F 1 "powerOn" V 15298 682 50  0000 R CNN
 F 2 "LED_THT:LED_D3.0mm" H 15350 800 50  0001 C CNN
 F 3 "~" H 15350 800 50  0001 C CNN
 	1    15350 800 
@@ -3029,8 +3007,6 @@ F 3 "" H 6100 750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7350 1450 7650 1450
-Wire Wire Line
 	7600 1050 7650 1050
 Wire Wire Line
 	7600 2150 7650 2150
@@ -3046,8 +3022,6 @@ Wire Wire Line
 	7600 2250 7650 2250
 Wire Wire Line
 	7600 1150 7650 1150
-Wire Wire Line
-	6800 1550 7650 1550
 Wire Wire Line
 	9250 2250 9300 2250
 Wire Wire Line
@@ -3854,4 +3828,8 @@ F 3 "" H 14800 5500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	14800 5500 14650 5500
+Wire Wire Line
+	7600 1450 7650 1450
+Wire Wire Line
+	7600 1550 7650 1550
 $EndSCHEMATC
