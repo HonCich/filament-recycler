@@ -92,7 +92,7 @@ U 1 1 61A9A339
 P 13100 700
 F 0 "J26" V 13064 512 50  0000 R CNN
 F 1 "24VDC_in" V 12973 512 50  0000 R CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 13100 700 50  0001 C CNN
+F 2 "main_board:TerminalBlock_bornier-2_P5.08mm" H 13100 700 50  0001 C CNN
 F 3 "~" H 13100 700 50  0001 C CNN
 	1    13100 700 
 	0    -1   -1   0   
@@ -688,7 +688,7 @@ U 1 1 601C34CB
 P 1750 1550
 F 0 "A1" H 1750 2331 50  0000 C CNN
 F 1 "Pololu_Breakout_DRV8825" H 1750 2240 50  0000 C CNN
-F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 1950 750 50  0001 L CNN
+F 2 "main_board:Pololu_Breakout-16_15.2x20.3mm" H 1950 750 50  0001 L CNN
 F 3 "https://www.pololu.com/product/2982" H 1850 1250 50  0001 C CNN
 	1    1750 1550
 	1    0    0    -1  
@@ -811,7 +811,7 @@ U 1 1 629F5BD6
 P 1800 3200
 F 0 "A2" H 1800 3981 50  0000 C CNN
 F 1 "Pololu_Breakout_DRV8825" H 1800 3890 50  0000 C CNN
-F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 2000 2400 50  0001 L CNN
+F 2 "main_board:Pololu_Breakout-16_15.2x20.3mm" H 2000 2400 50  0001 L CNN
 F 3 "https://www.pololu.com/product/2982" H 1900 2900 50  0001 C CNN
 	1    1800 3200
 	1    0    0    -1  
@@ -934,7 +934,7 @@ U 1 1 62A0E63F
 P 1800 4850
 F 0 "A3" H 1800 5631 50  0000 C CNN
 F 1 "Pololu_Breakout_DRV8825" H 1800 5540 50  0000 C CNN
-F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 2000 4050 50  0001 L CNN
+F 2 "main_board:Pololu_Breakout-16_15.2x20.3mm" H 2000 4050 50  0001 L CNN
 F 3 "https://www.pololu.com/product/2982" H 1900 4550 50  0001 C CNN
 	1    1800 4850
 	1    0    0    -1  
@@ -1057,7 +1057,7 @@ U 1 1 62A0E681
 P 1850 6500
 F 0 "A4" H 1850 7281 50  0000 C CNN
 F 1 "Pololu_Breakout_DRV8825" H 1850 7190 50  0000 C CNN
-F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 2050 5700 50  0001 L CNN
+F 2 "main_board:Pololu_Breakout-16_15.2x20.3mm" H 2050 5700 50  0001 L CNN
 F 3 "https://www.pololu.com/product/2982" H 1950 6200 50  0001 C CNN
 	1    1850 6500
 	1    0    0    -1  
@@ -1188,7 +1188,7 @@ U 1 1 60285E91
 P 8450 1750
 F 0 "U1" H 8450 2917 50  0000 C CNN
 F 1 "ESP32-DEVKITC-32D" H 8450 2826 50  0000 C CNN
-F 2 "ESP32-DEVKITC-32D:MODULE_ESP32-DEVKITC-32D" H 8450 1750 50  0001 L BNN
+F 2 "main_board:MODULE_ESP32-DEVKITC-32D" H 8450 1750 50  0001 L BNN
 F 3 "" H 8450 1750 50  0001 L BNN
 F 4 "Espressif Systems" H 8450 1750 50  0001 L BNN "MANUFACTURER"
 F 5 "4" H 8450 1750 50  0001 L BNN "PARTREV"
@@ -1221,7 +1221,7 @@ U 1 1 625263DD
 P 4350 8500
 F 0 "J10" H 4430 8492 50  0000 L CNN
 F 1 "24VDCout5" H 4430 8401 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4350 8500 50  0001 C CNN
+F 2 "main_board:TerminalBlock_bornier-2_P5.08mm" H 4350 8500 50  0001 C CNN
 F 3 "~" H 4350 8500 50  0001 C CNN
 	1    4350 8500
 	1    0    0    -1  
@@ -1416,7 +1416,7 @@ U 1 1 61CE89C2
 P 4350 7000
 F 0 "J9" H 4430 6992 50  0000 L CNN
 F 1 "24VDCout4" H 4430 6901 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4350 7000 50  0001 C CNN
+F 2 "main_board:TerminalBlock_bornier-2_P5.08mm" H 4350 7000 50  0001 C CNN
 F 3 "~" H 4350 7000 50  0001 C CNN
 	1    4350 7000
 	1    0    0    -1  
@@ -1526,7 +1526,7 @@ U 1 1 61CDCBCF
 P 4350 5500
 F 0 "J8" H 4430 5492 50  0000 L CNN
 F 1 "24VDCout3" H 4430 5401 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4350 5500 50  0001 C CNN
+F 2 "main_board:TerminalBlock_bornier-2_P5.08mm" H 4350 5500 50  0001 C CNN
 F 3 "~" H 4350 5500 50  0001 C CNN
 	1    4350 5500
 	1    0    0    -1  
@@ -1655,7 +1655,7 @@ U 1 1 61A107F0
 P 4350 4000
 F 0 "J7" H 4430 3992 50  0000 L CNN
 F 1 "24VDCout2" H 4430 3901 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4350 4000 50  0001 C CNN
+F 2 "main_board:TerminalBlock_bornier-2_P5.08mm" H 4350 4000 50  0001 C CNN
 F 3 "~" H 4350 4000 50  0001 C CNN
 	1    4350 4000
 	1    0    0    -1  
@@ -1749,7 +1749,7 @@ U 1 1 61A06509
 P 4350 2500
 F 0 "J6" H 4430 2492 50  0000 L CNN
 F 1 "24VDCout1" H 4430 2401 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4350 2500 50  0001 C CNN
+F 2 "main_board:TerminalBlock_bornier-2_P5.08mm" H 4350 2500 50  0001 C CNN
 F 3 "~" H 4350 2500 50  0001 C CNN
 	1    4350 2500
 	1    0    0    -1  
@@ -1840,7 +1840,7 @@ U 1 1 6030DF77
 P 4350 1000
 F 0 "J5" H 4430 992 50  0000 L CNN
 F 1 "24VDCout0" H 4430 901 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4350 1000 50  0001 C CNN
+F 2 "main_board:TerminalBlock_bornier-2_P5.08mm" H 4350 1000 50  0001 C CNN
 F 3 "~" H 4350 1000 50  0001 C CNN
 	1    4350 1000
 	1    0    0    -1  
@@ -2304,7 +2304,7 @@ U 1 1 62ED41FB
 P 10650 4750
 F 0 "J17" H 10730 4742 50  0000 L CNN
 F 1 "temp0" H 10730 4651 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 10650 4750 50  0001 C CNN
+F 2 "main_board:TerminalBlock_bornier-2_P5.08mm" H 10650 4750 50  0001 C CNN
 F 3 "~" H 10650 4750 50  0001 C CNN
 	1    10650 4750
 	-1   0    0    1   
@@ -2315,7 +2315,7 @@ U 1 1 62F309E1
 P 10650 5500
 F 0 "J18" H 10730 5492 50  0000 L CNN
 F 1 "temp1" H 10730 5401 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 10650 5500 50  0001 C CNN
+F 2 "main_board:TerminalBlock_bornier-2_P5.08mm" H 10650 5500 50  0001 C CNN
 F 3 "~" H 10650 5500 50  0001 C CNN
 	1    10650 5500
 	-1   0    0    1   
@@ -2475,7 +2475,7 @@ U 1 1 631222D5
 P 6300 1000
 F 0 "J11" H 6380 992 50  0000 L CNN
 F 1 "5VDCout0" H 6380 901 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6300 1000 50  0001 C CNN
+F 2 "main_board:TerminalBlock_bornier-2_P5.08mm" H 6300 1000 50  0001 C CNN
 F 3 "~" H 6300 1000 50  0001 C CNN
 	1    6300 1000
 	1    0    0    -1  
@@ -2569,7 +2569,7 @@ U 1 1 6318D242
 P 6300 2500
 F 0 "J12" H 6380 2492 50  0000 L CNN
 F 1 "5VDCout1" H 6380 2401 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6300 2500 50  0001 C CNN
+F 2 "main_board:TerminalBlock_bornier-2_P5.08mm" H 6300 2500 50  0001 C CNN
 F 3 "~" H 6300 2500 50  0001 C CNN
 	1    6300 2500
 	1    0    0    -1  
@@ -2663,7 +2663,7 @@ U 1 1 631B17CA
 P 6300 4000
 F 0 "J13" H 6380 3992 50  0000 L CNN
 F 1 "5VDCout2" H 6380 3901 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6300 4000 50  0001 C CNN
+F 2 "main_board:TerminalBlock_bornier-2_P5.08mm" H 6300 4000 50  0001 C CNN
 F 3 "~" H 6300 4000 50  0001 C CNN
 	1    6300 4000
 	1    0    0    -1  
@@ -2757,7 +2757,7 @@ U 1 1 631B1804
 P 6300 5500
 F 0 "J14" H 6380 5492 50  0000 L CNN
 F 1 "5VDCout3" H 6380 5401 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6300 5500 50  0001 C CNN
+F 2 "main_board:TerminalBlock_bornier-2_P5.08mm" H 6300 5500 50  0001 C CNN
 F 3 "~" H 6300 5500 50  0001 C CNN
 	1    6300 5500
 	1    0    0    -1  
@@ -2851,7 +2851,7 @@ U 1 1 6324F932
 P 6300 7000
 F 0 "J15" H 6380 6992 50  0000 L CNN
 F 1 "5VDCout4" H 6380 6901 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6300 7000 50  0001 C CNN
+F 2 "main_board:TerminalBlock_bornier-2_P5.08mm" H 6300 7000 50  0001 C CNN
 F 3 "~" H 6300 7000 50  0001 C CNN
 	1    6300 7000
 	1    0    0    -1  
@@ -3462,7 +3462,7 @@ U 1 1 6324F96C
 P 6300 8500
 F 0 "J16" H 6380 8492 50  0000 L CNN
 F 1 "5VDCout5" H 6380 8401 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6300 8500 50  0001 C CNN
+F 2 "main_board:TerminalBlock_bornier-2_P5.08mm" H 6300 8500 50  0001 C CNN
 F 3 "~" H 6300 8500 50  0001 C CNN
 	1    6300 8500
 	1    0    0    -1  

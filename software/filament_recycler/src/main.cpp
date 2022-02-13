@@ -9,12 +9,15 @@
 
 const uint8_t reflectivesensor0 = 34;
 const uint8_t PCA_OE = 25;
-const uint8_t temp0 = 32;
-const uint8_t temp1 = 33;
 const uint8_t step0 = 12;
 const uint8_t dir0 = 5;
 const uint8_t step1 = 17;
 const uint8_t dir1 = 0;
+char tempPin[2]={32,33};
+char fiveVPin[6]={8,9,10,11,0,1};
+char twentyFourVPin[6]={2,3,4,5,6,7};
+
+int prevTime = 0;
 
 const float c1 = 0.0007157730988481782;
 const float c2 = 0.0002145860245372531;
@@ -22,12 +25,13 @@ const float c3 = 1.0991444718982721e-7;
 
 PCA9685 PCA(0x70);
 AccelStepper stepper0(AccelStepper::DRIVER, step0, dir0);
+AccelStepper stepper1(AccelStepper::DRIVER, step1, dir1);
 
 void outputEnable (bool enable);
-void fiveVDrive (char output, int value);
-void twentyfourVDrive (char output, int value);
+void fiveVDrive (uint8_t output, int value);
+void twentyFourVDrive (uint8_t output, int value);
 int reflectiveRead ();
-float tempRead (char temp);
+float tempRead (uint8_t temp);
 
 void outputEnable (bool enable)
 {
@@ -45,58 +49,14 @@ void outputEnable (bool enable)
   }
 }
 
-void fiveVDrive (char output, int value)
+void fiveVDrive (uint8_t output, int value)
 {
-  char pin;
-  switch(output)
-  {
-    case 0:
-      pin = 8;
-      break;
-    case 1:
-      pin = 9;
-      break;
-    case 2:
-      pin = 10;
-      break;
-    case 3:
-      pin = 11;
-      break;
-    case 4:
-      pin = 0;
-      break;
-    case 5:
-     pin = 1;
-      break;
-  }
-  PCA.setPWM(pin,0+value*40.95);
+  PCA.setPWM(fiveVPin[output],0+value*40.95);
 }
 
-void twentyfourVDrive (char output, int value)
+void twentyFourVDrive (uint8_t output, int value)
 {
-  char pin;
-  switch (output)
-  {
-    case 0:
-      pin = 2;
-      break;
-    case 1:
-      pin = 3;
-      break;
-    case 2:
-      pin = 4;
-      break;
-    case 3:
-      pin = 5;
-      break;
-    case 4:
-      pin = 6;
-      break;
-    case 5:
-      pin = 7;
-      break;
-  }
-  PCA.setPWM(pin,0+value*40.95);
+  PCA.setPWM(twentyFourVPin[output],0+value*40.95);
 }
 
 int reflectiveRead ()
@@ -107,18 +67,10 @@ int reflectiveRead ()
   return analogRead(reflectivesensor0)-noise;
 }
 
-float tempRead (char temp)
+float tempRead (uint8_t temp)
 {
   float R,T,logR;
-  switch(temp)
-  {
-    case 0:
-       R = 100000 / (4095.0 / analogRead(temp0) - 1.0);
-      break;
-    case 1:
-      R = 100000 / (4095.0 / analogRead(temp1) - 1.0);
-      break;
-  }
+  R = 100000 / (4095.0 / analogRead(tempPin[temp]) - 1.0);
   logR = log(R);
   T = (1 / (c1 + c2 * logR + c3 * logR * logR * logR)) - 273.15;
   Serial.println(T);
@@ -127,23 +79,68 @@ float tempRead (char temp)
 
 void setup() {
   // put your setup code here, to run once:
-  //Serial.begin(115200);
+  Serial.begin(9600);
   Wire.begin(); 
   PCA.begin();
 
-  pinMode (PCA_OE, OUTPUT);
   outputEnable(1);
   stepper0.setAcceleration(200.0);
-  stepper0.setSpeed(100);
-  stepper0.move(1000);
+  stepper0.setMaxSpeed(1000);
+  stepper0.setSpeed(900);
+  stepper1.setAcceleration(200.0);
+  stepper1.setMaxSpeed(1000);
+  stepper1.setSpeed(100);
+
+  while (tempRead(0)<200&&tempRead(0)>0||tempRead(1)<200&&tempRead(0)>1)
+  {
+    if(tempRead(0)<200&&tempRead(0)>0)
+    {
+      twentyFourVDrive(0,70);
+    }
+    else
+    {
+      twentyFourVDrive(0,0);
+    }
+    if(tempRead(1)<200&&tempRead(1)>0)
+    {
+      twentyFourVDrive(1,70);
+    }
+    else
+    {
+      twentyFourVDrive(1,0);
+    }
+    delay(1000);
+  }
+  
+  prevTime = millis();
 }
 
 
-int x = 0;
-
 void loop() {
   // put your main code here, to run repeatedly
-    
-    stepper0.run();
-
+  if (millis()-prevTime>=1000)
+  {
+    Serial.println("testuju");
+    if(tempRead(0)<300&&tempRead(0)>100)
+    {
+      twentyFourVDrive(0,100);
+    }
+    else
+    {
+      twentyFourVDrive(0,0);
+    }
+    Serial.println();
+    if(tempRead(1)<300&&tempRead(1)>100)
+    {
+      twentyFourVDrive(1,100);
+    }
+    else
+    {
+      twentyFourVDrive(1,0);
+    }
+    prevTime=millis();
+  }
+  
+stepper0.runSpeed();
+//stepper1.runSpeed();
 }
