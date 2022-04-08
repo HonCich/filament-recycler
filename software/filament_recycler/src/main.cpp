@@ -9,6 +9,8 @@
 
 const uint8_t reflectivesensor0 = 34;
 const uint8_t PCA_OE = 25;
+const uint8_t stepperON = 12;
+const uint8_t LEDsign = 15;
 const uint8_t step0 = 12;
 const uint8_t dir0 = 5;
 const uint8_t step1 = 17;
@@ -38,13 +40,13 @@ void outputEnable (bool enable)
   if(enable==1)
   {
     digitalWrite(PCA_OE, LOW);
-    PCA.setON(12);
-    PCA.setON(15);
+    PCA.setON(stepperON);
+    PCA.setON(LEDsign);
   }
   else
   {
-    PCA.setOFF(15);
-    PCA.setOFF(12);
+    PCA.setOFF(stepperON);
+    PCA.setOFF(LEDsign);
     digitalWrite(PCA_OE, HIGH);
   }
 }
@@ -61,10 +63,8 @@ void twentyFourVDrive (uint8_t output, int value)
 
 int reflectiveRead ()
 {
-  PCA.setOFF(14);
-  int noise = analogRead(reflectivesensor0);
   PCA.setON(14);
-  return analogRead(reflectivesensor0)-noise;
+  return analogRead(reflectivesensor0);
 }
 
 float tempRead (uint8_t temp)
@@ -86,29 +86,15 @@ void setup() {
   outputEnable(1);
   stepper0.setAcceleration(200.0);
   stepper0.setMaxSpeed(1000);
-  stepper0.setSpeed(900);
+  stepper0.setSpeed(250);
   stepper1.setAcceleration(200.0);
   stepper1.setMaxSpeed(1000);
-  stepper1.setSpeed(100);
+  stepper1.setSpeed(15);
 
-  while (tempRead(0)<200&&tempRead(0)>0||tempRead(1)<200&&tempRead(0)>1)
+  twentyFourVDrive(0,100);
+  twentyFourVDrive(1,100);
+  while (tempRead(0)<260)
   {
-    if(tempRead(0)<200&&tempRead(0)>0)
-    {
-      twentyFourVDrive(0,70);
-    }
-    else
-    {
-      twentyFourVDrive(0,0);
-    }
-    if(tempRead(1)<200&&tempRead(1)>0)
-    {
-      twentyFourVDrive(1,70);
-    }
-    else
-    {
-      twentyFourVDrive(1,0);
-    }
     delay(1000);
   }
   
@@ -120,27 +106,19 @@ void loop() {
   // put your main code here, to run repeatedly
   if (millis()-prevTime>=1000)
   {
-    Serial.println("testuju");
-    if(tempRead(0)<300&&tempRead(0)>100)
+    if(tempRead(0)<300)
     {
       twentyFourVDrive(0,100);
-    }
-    else
-    {
-      twentyFourVDrive(0,0);
-    }
-    Serial.println();
-    if(tempRead(1)<300&&tempRead(1)>100)
-    {
       twentyFourVDrive(1,100);
     }
     else
     {
+      twentyFourVDrive(0,0);
       twentyFourVDrive(1,0);
     }
     prevTime=millis();
   }
   
 stepper0.runSpeed();
-//stepper1.runSpeed();
+stepper1.runSpeed();
 }
