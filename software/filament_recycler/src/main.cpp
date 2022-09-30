@@ -37,18 +37,9 @@ float tempRead (uint8_t temp);
 
 void outputEnable (bool enable)
 {
-  if(enable==1)
-  {
-    digitalWrite(PCA_OE, LOW);
-    PCA.setON(stepperON);
-    PCA.setON(LEDsign);
-  }
-  else
-  {
-    PCA.setOFF(stepperON);
-    PCA.setOFF(LEDsign);
-    digitalWrite(PCA_OE, HIGH);
-  }
+    digitalWrite(PCA_OE, !enable);
+    PCA.digitalWrite(stepperON,enable);
+    PCA.digitalWrite(LEDsign,enable);
 }
 
 void fiveVDrive (uint8_t output, int value)
@@ -86,25 +77,25 @@ void setup() {
   outputEnable(1);
   stepper0.setAcceleration(200.0);
   stepper0.setMaxSpeed(1000);
-  stepper0.setSpeed(250);
+  stepper0.setSpeed(200);
   stepper1.setAcceleration(200.0);
   stepper1.setMaxSpeed(1000);
-  stepper1.setSpeed(15);
+  stepper1.setSpeed(2);
 
-  twentyFourVDrive(0,100);
-  twentyFourVDrive(1,100);
-  while (tempRead(0)<260)
+  twentyFourVDrive(0,80);
+  twentyFourVDrive(1,80);
+  /*while (tempRead(0)<260)
   {
     delay(1000);
   }
   
-  prevTime = millis();
+  prevTime = millis();*/
 }
 
 
 void loop() {
   // put your main code here, to run repeatedly
-  if (millis()-prevTime>=1000)
+  /*if (millis()-prevTime>=1000)
   {
     if(tempRead(0)<300)
     {
@@ -117,7 +108,7 @@ void loop() {
       twentyFourVDrive(1,0);
     }
     prevTime=millis();
-  }
+  }*/
   
 stepper0.runSpeed();
 stepper1.runSpeed();
